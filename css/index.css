@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+body{
+    font-family:'Source Sans Pro', 'Poppins', sans-serif;
+}
+.button-blue{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 35px;
+    background: #3498db;
+    border: #3498db;
+    border-radius: 30px;
+   
+}
+h2{
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 65px;
+    margin-bottom: 15px;
+}
+h5{
+    
+    font-family:'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+h6{
+    font-family:'Poppins';
+    font-size: 16px;
+    line-height: 25px;
+}
+p{
+    margin-bottom: 16px;
+    color: #434955;
+}
+.section{
+    padding: 80px 0 30px;
+}
+
+/* HEADER */
+.header__icon i{
+    font-size: 1.1875rem;
+}
+.header__icon-small i{
+    font-size: 0.8125rem;
+    margin-right: 1rem;
+}
+.header__icon-small i:last-of-type{
+    margin: 0;
+    padding: 0.65rem;
+    border: 1px solid #777;
+}
+.nav__list{
+    overflow-y: scroll;
+}
+.nav__mobie li{
+    padding: 0.94rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+.nav__mobie{
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    z-index: 1000;
+}
+.nav__mobie.active{
+    transform: translateX(0);
+}
+
+/* CAROUSEL */
+
+.slider{
+    position: relative;
+    background-color: #000116;
+   
+    min-height: 500px;
+
+    overflow: hidden;
+}
+.slide-overlay img{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.slider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+   
+}
+.slider button{
+    transform: translateY(-700%);
+}
+.slider .slide.active button{
+    transform: translateY(0%);
+}
+.slider .slide.active{
+    
+    clip-path: circle(150% at 0 50%);
+    transition: 1s;
+}
+.slider .slide.active .button-blue{
+    transform: translateY(0%);
+    transition: 1s;
+}
+.slider .slide.active .slide-info h2{
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+
+.slider .slide-info{
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+.slider .slide-info h2{
+    transform: translateX(-105%);
+}
+
+.slider .navigation{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.slider:hover .navigation{
+    opacity: 1;
+}
+
+
+.prev-btn,.next-btn{
+    width: 50px;
+    height: 50px;
+    font-size: 10px !important;
+    z-index: 888;
+    font-size: 2rem;
+    padding: 15px;
+    background: #3498DB;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+}
+.navigation-visibility{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+   
+}
+.navigation-visibility i{
+    text-align: center;
+    color: #d6d6d6;
+    z-index: 999;
+   font-size: 12px;
+    width: 20px;
+    height: 20px;   
+    line-height: 13px;
+    margin: 6px;
+    margin-bottom: 26px;
+    padding: 2px;
+}
+.navigation-visibility i.active{
+    
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+.aboutUs-item i{
+    color: #3498DB;
+    margin-right: 10px;
+    font-size: 30px;
+}
+/* Service */
+.services-item{
+    padding: 30px;
+}
+.services-icon{
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.services-icon img{
+    width: 40px;
+    height: 40px;
+}
+.services-item h5::after{
+    display: block;
+    width: 40px;
+    margin-top: 13px;
+    content: '';
+    border-top: 2px solid;
+    background-color: #3498db;
+    border-color: #3498db;
+}
