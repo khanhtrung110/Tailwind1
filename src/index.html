@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,74 +8,100 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic,900italic,900,300,300italic"
+    rel="stylesheet" type="text/css">
   <!-- CSS -->
-  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/output.css">
   <link rel="stylesheet" href="/src/css/reset.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-  <header class="bg-black text-white w-full ">
-    <div class="w-full mx-auto flex justify-between items-center h-16 p-4">
-      <div class="flex">
-        <div class="header__icon mr-18">
+  <div class="wrapper__body">
+  <header class="bg-transparent text-white w-full ">
+    <div class="container mx-auto flex justify-between items-center h-16 p-8">
+      <div class="flex w-[60%]">
+        <div class="header__icon mr-18 lg:hidden">
           <i class="fa fa-bars"></i>
         </div>
-        <div>
-          <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="logo">
+        <div class="flex  ">
+          <img class="my-auto" src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="logo">
         </div>
-        <div class="nav__mobie fixed top-0 left-0 bottom-0 max-w-96 w-full ">
-          <div class="nav__mobie-close text-white text-2xl absolute top-4 right-8 z-30">
-            <i class="fa fa-times"></i>
-          </div>
-          <ul class="nav__list flex flex-col   bg-black text-brown">
-            <p class="text-center py-3">MENU</p>
-            <div class="p-3">
-              <input placeholder="Search" class="rounded-3xl w-full p-2 text-base bg-[#f7f7f7] leading-4 outline-hidden"
-                type="text">
-            </div>
-            <li class="nav-link">
-              <span>Home</span>
-              <i class="fa fa-angle-right"></i>
+        <div class="nav__pc w-full hidden lg:block">
+          <ul class="flex justify-end">
+
+            <li class="nav-item">
+              <a href="#">HOME</a>
+              <ul class="drop-down">
+                <li class="flex justify-between items-center"><span>HOME CORPORATE</span> <i
+                    class="fa fa-angle-right"></i>
+                  <ul class="drop-down2">
+                    <li>Corporate Layout 1</li>
+                    <li>Corporate Layout 1</li>
+                    <li>Corporate Layout 1</li>
+                  </ul>
+                </li>
+                <li class="flex justify-between items-center"><span>HOME AGENCY</span><i class="fa fa-angle-right"></i>
+                  <ul class="drop-down2">
+                    <li>Corporate Layout 1</li>
+                    <li>Corporate Layout 1</li>
+                    <li>Corporate Layout 1</li>
+                  </ul>
+                </li>
+                <li class="flex justify-between items-center"><span>HOME PORTFOLIO</span><i
+                    class="fa fa-angle-right"></i>
+                  <ul class="drop-down2">
+                    <li>Corporate Layout 1</li>
+                    <li>Corporate Layout 1</li>
+                    <li>Corporate Layout 1</li>
+                  </ul>
+                </li>
+                <li class="flex justify-between items-center"><span>LANDINGPAGE</span> <i class="fa fa-angle-right"></i>
+                  <ul class="drop-down2">
+                    <li>Corporate Layout 1</li>
+                    <li>Corporate Layout 1</li>
+                    <li>Corporate Layout 1</li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li class="nav-link">
-              <span>Headers</span>
-              <i class="fa fa-angle-right"></i>
+            <li class="nav-item">
+              <a href="#">HEADERS</a>
             </li>
-            <li class="nav-link">
-              <span>Pages</span>
-              <i class="fa fa-angle-right"></i>
+            <li class="nav-item">
+              <a href="#">PAGES</a>
             </li>
-            <li class="nav-link">
-              <span>Features</span>
-              <i class="fa fa-angle-right"></i>
+            <li class="nav-item">
+              <a href="#">FEATURES</a>
             </li>
-            <li class="nav-link">
-              <span>Portfolio</span>
-              <i class="fa fa-angle-right"></i>
+            <li class="nav-item">
+              <a href="#">PORTFOLIO</a>
             </li>
-            <li class="nav-link">
-              <span>Blog</span>
-              <i class="fa fa-angle-right"></i>
+            <li class="nav-item">
+              <a href="#">BLOG</a>
             </li>
-            <li class="nav-link">
-              <span>Shop</span>
-              <i class="fa fa-angle-right"></i>
+            <li class="nav-item">
+              <a href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">ELEMENTS</a>
             </li>
           </ul>
-
         </div>
+       
+
       </div>
-      <div class="ml-auto mr-7 header__icon-small">
+      <div class="mr-auto mr-7 header__icon-small">
         <i class="fa fa-search"></i>
         <i class="fa fa-shopping-bag"></i>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars btn-nav-right"></i>
       </div>
     </div>
 
   </header>
-
   <main class="w-full">
     <section class="carousel">
       <div class="slider w-full ">
@@ -103,7 +128,7 @@
             <img src="http://zozothemes.com/html/epoint/demo/images/content/slider/9.jpg" alt="slider">
           </div>
           <div class="slide-info">
-            <h2 class="uppercase ">We Are Creative 3</h2>
+            <h2 class="uppercase sm:text-[90px] sm:leading-[85px]">We Are Creative 3</h2>
             <button class="button-blue">LEARN MORE</button>
           </div>
         </div>
@@ -121,7 +146,7 @@
     <div class="container mx-auto p-3">
 
       <section class="aboutUs section ">
-        <h5 class="lg:w-[45%] p-6">We have more than 10 years experience in web design and development.</h5>
+        <h5 class="lg:w-[45%] p-6 font-">We have more than 10 years experience in web design and development.</h5>
         <div class="flex flex-col lg:flex-row lg:justify-around text-[#434955]">
           <div class="aboutUs__left lg:flex-1 lg:px-7">
 
@@ -135,9 +160,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et culpa dolore odio voluptate suscipit
               corporis sed ad sunt autem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et culpa dolore odio
               voluptate suscipit corporis sed ad sunt autem! </p>
-            <p class="mb-12">Et culpa dolore odio voluptate suscipit corporis sed ad sunt autem! Lorem ipsum dolor sit
+            <p class="mb-[66px]">Et culpa dolore odio voluptate suscipit corporis sed ad sunt autem! Lorem ipsum dolor
+              sit
               amet, consectetur adipisicing elit. </p>
-            <div class="aboutUs-icon flex flex-col lg:flex-row ">
+            <div class="aboutUs-icon flex flex-col mb-34 lg:flex-row ">
               <div class="aboutUs-item flex items-center lg:px-4">
                 <i class="fa fa-cloud-moon-rain"></i>
                 <h6>Analysis</h6>
@@ -157,83 +183,513 @@
     </div>
     <section class="services bg-[#f7f7f7] section">
       <div class="container mx-auto">
-      <div class="p-4 text-center font-light leading-10 text-[26px] text-[#434955] mb-4">
-        We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email Templates. 
-      </div>
-      <div class="services__content p-4 flex flex-col lg:flex-row lg:flex-wrap lg:justify-center">
-         <div class="services-item lg:basis-[30%]">
-           <div class="services-icon">
-            <img src="./img/horse-head.png" alt="">
-           </div>
-           <h5>
-            Creative Design
-           </h5>
-           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-         </div>
-         <div class="services-item lg:basis-[30%]">
-          <div class="services-icon">
-            <img src="./img/horse-head.png" alt="">
-          </div>
-          <h5>
-            App Development
-          </h5>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+        <div class="p-4 text-center font-light leading-39 text-26 text-[#434955] mb-4">
+          We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email
+          Templates.
         </div>
-        <div class="services-item lg:basis-[30%]">
-          <div class="services-icon">
-            <img src="./img/horse-head.png" alt="">
+        <div class="services__content p-4 flex flex-col lg:flex-row lg:flex-wrap lg:justify-center">
+          <div class="services-item lg:basis-[30%]">
+            <div class="services-icon">
+              <img src="./img/horse-head.png" alt="">
+            </div>
+            <h5>
+              Creative Design
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </p>
           </div>
-          <h5>
-           Email Marketing
-          </h5>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-        </div>
-        <div class="services-item lg:basis-[30%]">
-          <div class="services-icon">
-            <img src="./img/horse-head.png" alt="">
+          <div class="services-item lg:basis-[30%]">
+            <div class="services-icon">
+              <img src="./img/horse-head.png" alt="">
+            </div>
+            <h5>
+              App Development
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </p>
           </div>
-          <h5>
-            Online Marketing
-          </h5>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-        </div>
-        <div class="services-item lg:basis-[30%]">
-          <div class="services-icon">
-            <img src="./img/horse-head.png" alt="">
+          <div class="services-item lg:basis-[30%]">
+            <div class="services-icon">
+              <img src="./img/horse-head.png" alt="">
+            </div>
+            <h5>
+              Email Marketing
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </p>
           </div>
-          <h5>
-            E Commerce
-          </h5>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-        </div>
-        <div class="services-item lg:basis-[30%]">
-          <div class="services-icon">
-            <img src="./img/horse-head.png" alt="">
+          <div class="services-item lg:basis-[30%]">
+            <div class="services-icon">
+              <img src="./img/horse-head.png" alt="">
+            </div>
+            <h5>
+              Online Marketing
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </p>
           </div>
-          <h5>
-            Friendly Support
-          </h5>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+          <div class="services-item lg:basis-[30%]">
+            <div class="services-icon">
+              <img src="./img/horse-head.png" alt="">
+            </div>
+            <h5>
+              E Commerce
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </p>
+          </div>
+          <div class="services-item lg:basis-[30%]">
+            <div class="services-icon">
+              <img src="./img/horse-head.png" alt="">
+            </div>
+            <h5>
+              Friendly Support
+            </h5>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            </p>
+          </div>
         </div>
-        <section class="projects">
-
-        </section>
-      </div>
       </div>
     </section>
-    
+    <section class="projects section">
+      <div class="review ">
+        <div class="header-content relative">
+          <div class="title">
+            <h3 class="text-center">Our Latest Projects</h3>
+            <h3 class="text-center underlined text-16 font-normal leading-7 font-plus">We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email Templates. </h3>
+          </div>
+          <div class="nav absolute justify-between">
+            <i class="fa fa-angle-left btnLeft"></i>
+            <i class="fa fa-angle-right btnRight"></i>
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="box">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/4.jpg"
+                alt="" />
+            </div>
+            <h5 class="name">Wifi Creators</h5>
+            <h5 class="text-[#434955] text-16 font-normal leading-7 font-plus">Photography</h5>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/5.jpg"
+                alt="" />
+            </div>
+            <h5 class="name">Wifi Creators</h5>
+            <h5 class="text-[#434955] text-16 font-normal leading-7 font-plus">Photography</h5>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/1.jpg"
+                alt="" />
+            </div>
+            <h5 class="name">Wifi Creators</h5>
+            <h5 class="text-[#434955] text-16 font-normal leading-7 font-plus">Photography</h5>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/2.jpg"
+                alt="" />
+            </div>
+            <h5 class="name">Wifi Creators</h5>
+            <h5 class="text-[#434955] text-16 font-normal leading-7 font-plus">Photography</h5>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/3.jpg"
+                alt="" />
+            </div>
+            <h5 class="name">Wifi Creators</h5>
+            <h5 class="text-[#434955] text-16 font-normal leading-7 font-plus">Photography</h5>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img
+                src="	http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/2.jpg"
+                alt="" />
+            </div>
+            <h5 class="name">Wifi Creators</h5>
+            <h5 class="text-[#434955] text-16 font-normal leading-7 font-plus">Photography</h5>
+          </div>
+         
+          <!-- end box -->
+          ...
+        </div>
+      </div>
+     
+
+    </section>
+    <section class="theme-bg bg-[#3498db] py-30 ">
+      <div class="container mx-auto  lg:flex lg:flex-row ">
+        <h5 class="text-[#fff] mb-25 lg:mb-0 text-16 font-medium lg:w-[60%] flex-2 px-15">We ensure quality & support.
+          People love us & we love them. We provide services more than 100000 Customers worldwide. <strong
+            class="font-black">Do you need any Help?</strong></h5>
+        <div class="flex-1 lg:flex lg: justify-end pr-50 text-right">
+          <button class=" btn-black  "><span>Contact Now <i class="fa fa-long-arrow-alt-right"></i></span></button>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials section ">
+      <div class="testimonials__review ">
+        <div class="testimonials__title relative">
+          <h3>What Clients Says?</h3>
+          <div class="nav absolute justify-between hidden">
+            <i class="fa fa-angle-left btnLeft-1"></i>
+            <i class="fa fa-angle-right btnRight-1"></i>
+          </div>
+        </div>
+        <div class="testimonials__content ">
+              <div class="child">
+                <div class="carousel-title text-left">
+                  <div class="title-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </div>
+                  <div class="title-actor">
+                    <h6>Michael Y</h6>
+                    <span>Facebook</span>
+                  </div>
+                </div>
+              </div>
+              <div class="child">
+                <div class="carousel-title text-left">
+                  <div class="title-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </div>
+                  <div class="title-actor">
+                    <h6>Michael Y</h6>
+                    <span>Facebook</span>
+                  </div>
+                </div>
+              </div>
+              <div class="child">
+                <div class="carousel-title text-left">
+                  <div class="title-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </div>
+                  <div class="title-actor">
+                    <h6>Michael Y</h6>
+                    <span>Facebook</span>
+                  </div>
+                </div>
+              </div>
+              <div class="child">
+                <div class="carousel-title text-left">
+                  <div class="title-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </div>
+                  <div class="title-actor">
+                    <h6>Michael Y</h6>
+                    <span>Facebook</span>
+                  </div>
+                </div>
+              </div>
+              <div class="child">
+                <div class="carousel-title text-left">
+                  <div class="title-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </div>
+                  <div class="title-actor">
+                    <h6>Michael Y</h6>
+                    <span>Facebook</span>
+                  </div>
+                </div>
+              </div>
+              <div class="child">
+                <div class="carousel-title text-left">
+                  <div class="title-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </div>
+                  <div class="title-actor">
+                    <h6>Michael Y</h6>
+                    <span>Facebook</span>
+                  </div>
+                </div>
+              </div>
+              <div class="child">
+                <div class="carousel-title text-left">
+                  <div class="title-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                  </div>
+                  <div class="title-actor">
+                    <h6>Michael Y</h6>
+                    <span>Facebook</span>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section class="owl-stage-outer container mx-auto overflow-x-scroll">
+      <div class="owl-stage-content flex justify-center w-[1280px] mx-auto  ">
+        <div class="owl-item">
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/1.png" alt="">
+        </div>
+        <div class="owl-item">
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/2.png" alt="">
+        </div>
+        <div class="owl-item">
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/3.png" alt="">
+        </div>
+        <div class="owl-item">
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/4.png" alt="">
+        </div>
+        <div class="owl-item">
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="">
+        </div>
+        <div class="owl-item">
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/6.png" alt="">
+        </div>
+        <div class="owl-item">
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/7.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="review-1">
+        <div class="header-content-1 relative">
+          <div class="title">
+            <h3 class="text-center">Our Latest Projects</h3>
+            <h3 class="text-center underlined text-16 font-normal leading-7 font-plus">We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email Templates. </h3>
+          </div>
+          <div class="nav absolute justify-between hidden">
+            <i class="fa fa-angle-left btnLeft-2"></i>
+            <i class="fa fa-angle-right btnRight-2"></i>
+          </div>
+        </div>
+        <div class="review-box-1">
+          <div class="box-1">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/blog/t1.jpg"
+                alt="" />
+            </div>
+            <h5 class="name  text-left">Wordpress Installation Doc</h5>
+            <h5 class="text-[#434955] text-13 font-normal leading-7 font-plus  text-left">Photography</h5>
+          </div>
+          <div class="box-1">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/blog/t2.jpg"
+                alt="" />
+            </div>
+            <h5 class="name  text-left">Wordpress Installation Doc</h5>
+            <h5 class="text-[#434955] text-13 font-normal leading-7 font-plus  text-left">Photography</h5>
+          </div>
+          <div class="box-1">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/blog/t3.jpg"
+                alt="" />
+            </div>
+            <h5 class="name  text-left">Wordpress Installation Doc</h5>
+            <h5 class="text-[#434955] text-13 font-normal leading-7 font-plus  text-left">Photography</h5>
+          </div>
+          <div class="box-1">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/blog/t4.jpg"
+                alt="" />
+            </div>
+            <h5 class="name  text-left">Wordpress Installation Doc</h5>
+            <h5 class="text-[#434955] text-13 font-normal leading-7 font-plus  text-left">Photography</h5>
+          </div>
+          <div class="box-1 ">
+            <div class="image">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/blog/t5.jpg"
+                alt="" />
+            </div>
+            <h5 class="name  text-left">Wordpress Installation Doc</h5>
+            <h5 class="text-[#434955] text-13 font-normal leading-7 font-plus  text-left">Photography</h5>
+          </div>
+       
+         
+          <!-- end box -->
+          ...
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="text-[#aeadad] bg-black">
+    <div class="lg:w-[80%] mx-auto relative">
+      <button class="m-[2px] px-22 py-[8px] bg-[#3498DB] text-white text-15 absolute top-0">CONTACT NOW <i class="fa fa-envelope ml-[8px]"></i></button>
+    <div class="footer__top pt-[120px] pb-[30px]">
+      <div class="footer__top-content grid grid-cols-4 gap-4
+      ">
+        <div class="footer-item">
+          <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="">
+          <br>
+          <p>We believe in Simple, Creative &amp; Flexible Design Standards. Unlimited features, elements and fast and friendly support gives ultimate website to boom your business.</p>
+        </div>
+        <div class="footer-item">
+          <h5>OUR OFFICE</h5>
+          <address>
+            <div class="address-item">
+              <i class="fa fa-map-marker-alt"></i>
+              <p class="feature-description">Zozotheme.com<br> No. 12, Ribbon Building, Walse street, Australia - 30001.</p>
+            </div>
+            <div class="address-item">
+              <i class="fa fa-phone"></i>
+              <p class="feature-description"> +0 (123) 456-78-90</p>
+            </div>
+            <div class="address-item">
+              <i class="fa fa-envelope"></i>
+              <p class="feature-description"><a class="a-active" href="mailto:info@website.com">support@zozothemes.com</a></p> 
+            </div>
+            
+          </address>
+        </div>
+        <div class="footer-item">
+          <h5 class="uppercase">Quick Links</h5>
+          <ul class="quicklink grid grid-cols-2">
+            <li><i class="fa fa-angle-right"></i>Home</li>
+            <li><i class="fa fa-angle-right"></i>About Us</li>
+            <li><i class="fa fa-angle-right"></i>Services</li>
+            <li><i class="fa fa-angle-right"></i>Features</li>
+            <li><i class="fa fa-angle-right"></i>Our Portfolio</li>
+            <li><i class="fa fa-angle-right"></i>Client Reviews</li>
+            <li><i class="fa fa-angle-right"></i>Our Experts</li>
+            <li><i class="fa fa-angle-right"></i>Packages</li>
+            <li><i class="fa fa-angle-right"></i>Blog</li>
+            <li><i class="fa fa-angle-right"></i>Support</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h5 class="uppercase">Email Newsletter</h5>
+          <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
+          <div class="inputWithIcon relative overflow-hidden ">
+            <input type="text"  placeholder="Enter Your Email" >
+            <span class="absolute top-0 right-0 px-[12px] py-[8px] bg-[#3498db]"><i class="fa fa-share  text-white "></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom lg:flex lg:justify-between">
+      <div class="footer-text text-13">
+        <p>© 2022 ePoint . All Rights Reserved. Terms & Conditions | Cookie policy </p>
+      </div>
+      <div class="footer-icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f"></i>
+      </div>
+    </div>
+  </div>
+  </footer>
+  <div class="  overlay-full absolute top-0 left-0 z-[100] w-full h-full bg-transparent">
 
-
-
-
-
-
-
-
-
+  </div>
+  </div>
+  <div class="side-nav  text-white overflow-y-scroll fixed top-0 right-0 w-[370px] h-full bg-black z-[1111] px-30 pt-35 pb-40">
+    <div class="slide-nav-content flex flex-col">
+      <div class="btn-close mb-20">
+        <i class="flex items-center justify-center rounded-[50%] bg-[#3498db] fa fa-times text-white w-32 h-32 text-22"></i>
+      </div>
+      <h5>About Me</h5>
+      <img class="w-full h-full max-w-[417px] max-h-[320px] mb-16" src="http://zozothemes.com/html/epoint/demo/images/content/others/9.jpg" alt="">
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore velit esse cillum dolore eu fugiat nulla pariatur dolore eu fugiat nulla pariatur.</p>
+      <div class="slide-post">
+      <h5>Recent Post</h5>
+      <div class="slide-post-item">
+        <img src="http://zozothemes.com/html/epoint/demo/images/content/blog/thumb/1.jpg" alt="">
+        <div class="item-text">
+          <h6 class="recent-title">Google Released New Android Application </h6>
+          <p>27th Aug, 2016</p>
+        </div>
+      </div>
+      <div class="slide-post-item">
+        <img src="http://zozothemes.com/html/epoint/demo/images/content/blog/thumb/1.jpg" alt="">
+        <div class="item-text">
+          <h6 class="recent-title">Google Released New Android Application </h6>
+          <p>27th Aug, 2016</p>
+        </div>
+      </div>
+      <div class="slide-post-item">
+        <img src="http://zozothemes.com/html/epoint/demo/images/content/blog/thumb/1.jpg" alt="">
+        <div class="item-text">
+          <h6 class="recent-title">Google Released New Android Application </h6>
+          <p>27th Aug, 2016</p>
+        </div>
+      </div>
+      </div>
+      <div class="slide-share">
+        <h5>Social Share</h5>
+        <div class="slide-share-icon flex flex-wrap">
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-facebook-f"></i></span>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav__mobie overflow-y-scroll fixed z-[99] top-0 left-0 w-full h-full max-w-[440px] bg-black  ">
+    <div class="nav__mobie-content">
+    <div class="nav__mobie-close text-white text-2xl absolute top-4 right-8 z-30">
+      <i class="fa fa-times"></i>
+    </div>
+    <ul class="nav__list flex flex-col   bg-black text-brown">
+      <p class="text-center py-3">MENU</p>
+      <div class="p-3">
+        <input placeholder="Search" class="rounded-3xl w-full p-2 text-base bg-[#f7f7f7] leading-4 outline-hidden"
+          type="text">
+      </div>
+      <li class="nav-link">
+        <span>Home</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+      <li class="nav-link">
+        <span>Headers</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+      <li class="nav-link">
+        <span>Pages</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+      <li class="nav-link">
+        <span>Features</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+      <li class="nav-link">
+        <span>Portfolio</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+      <li class="nav-link">
+        <span>Blog</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+      <li class="nav-link">
+        <span>Shop</span>
+        <i class="fa fa-angle-right"></i>
+      </li>
+    </ul>
+  </div>
+  </div>
   <!-- --------------JS----------------- -->
-  <script src="./js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
