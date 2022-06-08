@@ -9,7 +9,7 @@ const wrapperBox = document.querySelector(`.${fatherBox}`);
 const btnLeft = document.querySelector(`.${buttonLeft}`);
 const btnRight = document.querySelector(`.${buttonRight}`);
 const reviewDiv = document.querySelector(`.${father}`);
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
     // responsive
     window.addEventListener('resize', function () {
         if (window.innerWidth >= 1366) {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     else {
         make_slide(1);
     }
-});
+// });
 
 function make_slide(amountSlideAppear) {
     // set width and margin for item slide

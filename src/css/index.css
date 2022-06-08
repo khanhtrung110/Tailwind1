@@ -178,6 +178,7 @@ header{
   cursor: pointer;
   outline: none;
   color: black;
+  
 }
 
 .projects .controls button.prev {
@@ -209,7 +210,9 @@ header{
 
 /* --------------------------------- */
 
-
+#header-fixed{
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+}
 
 
 /* Service */

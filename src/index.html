@@ -13,22 +13,22 @@
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic,900italic,900,300,300italic"
     rel="stylesheet" type="text/css">
   <!-- CSS -->
-  <link rel="stylesheet" href="../dist/output.css">
-  <link rel="stylesheet" href="/src/css/reset.css">
-  <link rel="stylesheet" href="./css/responsive.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="../dist/outputtailwind.css">
+   
+
 </head>
 
 <body>
-  <div class="wrapper__body">
-  <header class="bg-transparent text-white w-full ">
-    <div class="container mx-auto flex justify-between items-center h-16 p-8">
-      <div class="flex w-[60%]">
+  <header id="header-fixed" class="bg-transparent text-white w-full ">
+    <div class="  overlay-full absolute top-0 left-0 z-[999] w-full h-full bg-transparent">
+    </div>
+    <div id="header-fixed-container" class="container mx-auto flex justify-between items-center h-16 p-8 w-full">
+      <div class="flex w-[41%] sm:w-[70%]">
         <div class="header__icon mr-18 lg:hidden">
           <i class="fa fa-bars"></i>
         </div>
         <div class="flex  ">
-          <img class="my-auto" src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="logo">
+          <img class="my-auto img-icon" src="http://zozothemes.com/html/epoint/demo/images/logo.png" alt="logo">
         </div>
         <div class="nav__pc w-full hidden lg:block">
           <ul class="flex justify-end">
@@ -102,6 +102,7 @@
     </div>
 
   </header>
+  <div class="wrapper__body ">
   <main class="w-full">
     <section class="carousel">
       <div class="slider w-full ">
@@ -151,7 +152,7 @@
           <div class="aboutUs__left lg:flex-1 lg:px-7">
 
             <div class="aboutUS_img mb-8">
-              <img src="http://zozothemes.com/html/epoint/demo/images/content/others/2.jpg" alt="">
+              <img class="w-full" src="http://zozothemes.com/html/epoint/demo/images/content/others/2.jpg" alt="">
               <p class="mt-9">Et culpa dolore odio voluptate suscipit corporis sed ad sunt autem! Lorem ipsum dolor sit
                 amet, consectetur adipisicing elit. </p>
             </div>
@@ -187,7 +188,7 @@
           We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email
           Templates.
         </div>
-        <div class="services__content p-4 flex flex-col lg:flex-row lg:flex-wrap lg:justify-center">
+        <div class="services__content flex flex-col lg:flex-row lg:flex-wrap lg:justify-center">
           <div class="services-item lg:basis-[30%]">
             <div class="services-icon">
               <img src="./img/horse-head.png" alt="">
@@ -251,14 +252,14 @@
         </div>
       </div>
     </section>
-    <section class="projects section">
+    <section class="projects section px-15 xl:px-0">
       <div class="review ">
         <div class="header-content relative">
           <div class="title">
             <h3 class="text-center">Our Latest Projects</h3>
             <h3 class="text-center underlined text-16 font-normal leading-7 font-plus">We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email Templates. </h3>
           </div>
-          <div class="nav absolute justify-between">
+          <div class="nav absolute justify-between ">
             <i class="fa fa-angle-left btnLeft"></i>
             <i class="fa fa-angle-right btnRight"></i>
           </div>
@@ -336,7 +337,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonials section ">
+    <section class="testimonials px-15 xl:px-0 section ">
       <div class="testimonials__review ">
         <div class="testimonials__title relative">
           <h3>What Clients Says?</h3>
@@ -458,7 +459,7 @@
         </div>
       </div>
     </section>
-    <section class="news">
+    <section class="news px-15 xl:px-0">
       <div class="review-1">
         <div class="header-content-1 relative">
           <div class="title">
@@ -524,11 +525,13 @@
       </div>
     </section>
   </main>
-  <footer class="text-[#aeadad] bg-black">
-    <div class="lg:w-[80%] mx-auto relative">
+  <div class="  overlay-full fixed top-0 left-0 z-[999] w-full h-full bg-transparent">
+  </div>
+  <footer class="text-[#aeadad] bg-black px-10 md:px-0">
+    <div class="container p-0 lg:w-[80%] mx-auto relative">
       <button class="m-[2px] px-22 py-[8px] bg-[#3498DB] text-white text-15 absolute top-0">CONTACT NOW <i class="fa fa-envelope ml-[8px]"></i></button>
     <div class="footer__top pt-[120px] pb-[30px]">
-      <div class="footer__top-content grid grid-cols-4 gap-4
+      <div class="footer__top-content grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4
       ">
         <div class="footer-item">
           <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="">
@@ -594,9 +597,6 @@
     </div>
   </div>
   </footer>
-  <div class="  overlay-full absolute top-0 left-0 z-[100] w-full h-full bg-transparent">
-
-  </div>
   </div>
   <div class="side-nav  text-white overflow-y-scroll fixed top-0 right-0 w-[370px] h-full bg-black z-[1111] px-30 pt-35 pb-40">
     <div class="slide-nav-content flex flex-col">
@@ -646,8 +646,9 @@
       </div>
     </div>
   </div>
-  <div class="nav__mobie overflow-y-scroll fixed z-[99] top-0 left-0 w-full h-full max-w-[440px] bg-black  ">
-    <div class="nav__mobie-content">
+  
+  <div class="nav__mobie overflow-y-scroll fixed z-[1111] top-0 left-0 w-[440px] h-full  bg-black  ">
+    <div class="nav__mobie-content ">
     <div class="nav__mobie-close text-white text-2xl absolute top-4 right-8 z-30">
       <i class="fa fa-times"></i>
     </div>
@@ -688,6 +689,7 @@
     </ul>
   </div>
   </div>
+  
   <!-- --------------JS----------------- -->
   <script type="module" src="./js/main.js"></script>
 </body>

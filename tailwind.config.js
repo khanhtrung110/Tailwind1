@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -224,5 +225,23 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addComponents }) {
+      addComponents({
+        '.container': {
+          padding: '0px 0.9375rem',
+          '@media (min-width: 920px)': {
+            width:'100%',
+            maxWidth:'970px',
+          },
+          '@media (min-width: 1200px)': {
+            width:'100%',
+            maxWidth:'1170px',
+          },
+          
+        },
+        
+      })
+    })
+  ],
 }

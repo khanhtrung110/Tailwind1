@@ -1,3 +1,6 @@
+@import "css/index.css";
+@import  "/src/css/reset.css";
+@import  "./css/responsive.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -44,6 +47,13 @@
     .header__icon-small i:last-of-type{
         @apply m-0 p-[0.65rem] border border-[#777];
     }
+
+    /* header-fixed */
+    #header-fixed {
+        @apply bg-white text-black fixed z-[555] top-0 left-0 transition-all duration-[0.75s];
+    }
+
+    /* nav */
     .nav__list{
         @apply overflow-y-scroll;
     }
@@ -56,13 +66,19 @@
     .nav__mobie.active{
        @apply translate-x-[0];
     }
+    .nav__mobie::-webkit-scrollbar{
+        @apply hidden;
+    }
     /* ------CAROUSEL-------- */
     .slider{
         @apply relative bg-[#000116] min-h-[500px] overflow-hidden;
     }
-    .slide-overlay img{
-        @apply fixed top-0 w-full h-full object-cover;
+    .slide-overlay {
+        @apply fixed top-0  w-full h-full object-cover;
     } 
+    .slide-overlay img{
+        @apply w-full h-[13%] object-cover;
+    }
 
 
     .slider button{
@@ -112,7 +128,7 @@
     /* Service */
 
     .services-item{
-        @apply p-30;
+        @apply px-15 transition-all duration-[1s];
     }
     .services-icon{
         @apply w-60 h-60 bg-[#3498db] rounded-[50%] flex justify-center items-center mb-15;
@@ -171,6 +187,12 @@
     .footer-icon i{
         @apply text-10 px-10;
     }
+
+    /* owl-stage-outer */
+    .owl-stage-outer::-webkit-scrollbar{
+        @apply hidden
+    }
+
     /* .side-nav */
 
     .side-nav h5, .side-nav p{
@@ -203,12 +225,23 @@
     .wrapper__body{
         @apply translate-x-[0]  transition-all duration-[0.75s];
     }
-    .wrapper__body.active{
-        @apply translate-x-[-370px];
+    
+    .wrapper__body.active,#header-fixed.active{
+        @apply translate-x-[-370px] ;
     }
+   
+    
     .wrapper__body.active-l{
-        @apply translate-x-[440px];
+        @apply translate-x-[440px] fixed ;
     }
+    #header-fixed.active-l{
+        @apply left-[440px];
+    }
+ 
+    .header-content .nav{
+        @apply opacity-0 lg:opacity-[1] ;
+    }
+  
     .overlay-full{
         @apply hidden;
     }
